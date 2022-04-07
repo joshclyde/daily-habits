@@ -1,0 +1,74 @@
+body {
+  background-color: #262626;
+  margin: 128px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+label,
+a {
+  font-family: "Varela Round", "sans-serif", "apple color emoji";
+  font-weight: 400;
+}
+
+h1 {
+  color: #f2cf5f;
+  font-size: 18px;
+}
+
+a {
+  color: #79dfff;
+}
+
+label {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  /* Removing the native checkbox input appearance. */
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  /* Exclusive styling when not checked. */
+  border: 1px solid #f2cf5f;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f2cf5f;
+
+  /* Styling to offset exclusive styling when not checked. */
+  border: none;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration-line: line-through;
+}
+
+.container {
+  /* width: max-content; */
+  min-width: 256px;
+  max-width: 512px;
+}
+
+#list-of-habits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  padding-left: 8px;
+}

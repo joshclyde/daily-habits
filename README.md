@@ -6,7 +6,7 @@ Website that has a checklist of my daily habits.
 
 Use local storage for database. When a habit is checked off the checklist, I want to save that the item is checked off. When a new day starts, clear the old data.
 
-3am ET will be the time that a new day starts, just in case I go to bed late and have daily habits that are not done until bedtime.
+3am will be the time that a new day starts, just in case I go to bed late and have daily habits that are not done until bedtime.
 
 To change the habit list, I just manually change the json. If I need to change the description, it will not affect whether the habit was completed or not for that day. If I need to remove the habit, then just remove it from the json then it won't show up regardless of whether the id is in the local storage checked array.
 
