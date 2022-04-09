@@ -2,6 +2,15 @@
 
 Website that has a checklist of my daily habits.
 
+## Backlog
+
+- make a favicon
+- think about increasing the size of everything
+- decrease margin top?
+- fun animations
+- change a checked box from filled to an actual checkmark
+- include figma mocks
+
 ## Data
 
 Use local storage for database. When a habit is checked off the checklist, I want to save that the item is checked off. When a new day starts, clear the old data.
@@ -15,35 +24,11 @@ For ordering, the order in the json is the order in which the elements are displ
 ```json
 {
   "a": {
-    "description": "Wake up at a quality time 🌅"
+    "description": "Some description"
   },
   "b": {
-    "description": "Weigh Myself",
-    "link": "https://docs.google.com/spreadsheets/d/1fJ7z7xNfmxzrj5tjM6VXIdT8vRJdaWxV6ie5py5DdNE/edit#gid=0"
-  },
-  "c": {
-    "description": "Cross off calendar day 📆",
-  },
-  "d": {
-    "description": "Water 🌊",
-  },
-  "e": {
-    "description": "Coffee ☕️",
-  },
-  "f": {
-    "description": "Read journal 👀",
-  },
-  "g": {
-    "description": "Write journal ✏️",
-  },
-  "h": {
-    "description": "Email ✉️",
-  },
-  "i": {
-    "description": "Cat Litter 🐈",
-  },
-  "j": {
-    "description": "Teeth 🪥 🦷",
+    "description": "Another description",
+    "link": "https://github.com/joshclyde/daily-habits"
   },
 }
 ```
