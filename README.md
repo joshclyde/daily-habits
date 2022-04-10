@@ -13,8 +13,6 @@ node ./server.mjs
 
 ## Backlog
 
-- think about increasing the size of everything
-- decrease margin top?
 - fun animations
 - change a checked box from filled to an actual checkmark
 - include figma mocks

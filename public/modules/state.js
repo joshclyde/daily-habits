@@ -1,3 +1,24 @@
+export const removeAllCheckedItems = () => {
+  localStorage.setItem("checkedItems", "[]");
+};
+
+
+export const getCheckedItems = () =>
+  JSON.parse(localStorage.getItem("checkedItems"));
+
+export const addCheckedItem = (id) => {
+  const checkedItems = JSON.parse(localStorage.getItem("checkedItems"));
+  localStorage.setItem("checkedItems", JSON.stringify([...checkedItems, id]));
+};
+
+export const removeCheckedItem = (id) => {
+  const checkedItems = JSON.parse(localStorage.getItem("checkedItems"));
+  localStorage.setItem(
+    "checkedItems",
+    JSON.stringify(checkedItems.filter((value) => value !== id))
+  );
+};
+
 // Initializing "date"
 let date = localStorage.getItem("date");
 if (date === null) {
@@ -19,23 +40,3 @@ const checkedItems = localStorage.getItem("checkedItems");
 if (checkedItems === null) {
   localStorage.setItem("checkedItems", JSON.stringify([]));
 }
-
-export const getCheckedItems = () =>
-  JSON.parse(localStorage.getItem("checkedItems"));
-
-export const addCheckedItem = (id) => {
-  const checkedItems = JSON.parse(localStorage.getItem("checkedItems"));
-  localStorage.setItem("checkedItems", JSON.stringify([...checkedItems, id]));
-};
-
-export const removeCheckedItem = (id) => {
-  const checkedItems = JSON.parse(localStorage.getItem("checkedItems"));
-  localStorage.setItem(
-    "checkedItems",
-    JSON.stringify(checkedItems.filter((value) => value !== id))
-  );
-};
-
-export const removeAllCheckedItems = () => {
-  localStorage.setItem("checkedItems", "[]");
-};
