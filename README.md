@@ -2,9 +2,17 @@
 
 Website that has a checklist of my daily habits.
 
+## Running Locally
+
+```sh
+npm i
+node ./server.mjs
+
+# Daily Habits is listening on port 3000
+```
+
 ## Backlog
 
-- make a favicon
 - think about increasing the size of everything
 - decrease margin top?
 - fun animations

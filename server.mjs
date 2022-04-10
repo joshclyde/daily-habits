@@ -6,6 +6,6 @@ const port = 3000;
 app.use(express.static("public"));
 
 app.listen(port, () => {
-  console.log(`Daily Habits listening on port ${port}`);
+  console.log(`Daily Habits is listening on port ${port}`);
 });
 

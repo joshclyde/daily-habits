@@ -1,0 +1,24 @@
+<svg width="13"
+  height="13"
+  viewBox="0 0 13 13"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <circle cx="6.5"
+    cy="6.5"
+    r="6.25"
+    fill="#262626"
+    stroke="#F2CF5F"
+    stroke-width="0.5"/>
+  <line x1="3.69338"
+    y1="7.86132"
+    x2="5.86132"
+    y2="9.30662"
+    stroke="#F2CF5F"
+    stroke-linecap="round"/>
+  <line x1="5.86132"
+    y1="9.30662"
+    x2="9.30662"
+    y2="4.13867"
+    stroke="#F2CF5F"
+    stroke-linecap="round"/>
+</svg>
