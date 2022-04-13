@@ -27,20 +27,24 @@ To change the habit list, just manually change the json. If I need to change the
 
 ```typescript
 // The ordering of records will decide the ordering seen by the user.
-type Habits = Record<
+type HabitList = Record<
   string,
   {
     description: string;
     link?: string;
   }
 >;
+
+interface Habits {
+  morning: HabitList;
+  night: HabitList;
+}
 ```
 
 ## 🎒 Backlog
 
 - change a checked box from filled to an actual checkmark
 - move checked items to bottom of list
-- create nightly daily habits
 - make sure the sizing of the page is even between figma iphone size, desktop in iphone size, and actual iphone
 - change font size to use em
 - create a footer or put margin on bottom (on phone, can't really scroll past last checkpoint which is a little awkward)

@@ -4,7 +4,7 @@ import { getCheckedItems } from "./modules/state.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   const checkedItems = getCheckedItems();
-  const checkboxFragment = Object.entries(habits).reduce(
+  const morningHabitsFragment = Object.entries(habits.morning).reduce(
     (fragment, [id, value]) => {
       fragment.appendChild(
         Checkbox({ id, checked: checkedItems.includes(id), ...value })
@@ -14,5 +14,16 @@ window.addEventListener("DOMContentLoaded", () => {
     document.createDocumentFragment()
   );
 
-  document.getElementById("list-of-habits").appendChild(checkboxFragment);
+  const nightHabitsFragment = Object.entries(habits.night).reduce(
+    (fragment, [id, value]) => {
+      fragment.appendChild(
+        Checkbox({ id, checked: checkedItems.includes(id), ...value })
+      );
+      return fragment;
+    },
+    document.createDocumentFragment()
+  );
+
+  document.getElementById("morning-habits-list").appendChild(morningHabitsFragment);
+  document.getElementById("night-habits-list").appendChild(nightHabitsFragment);
 });

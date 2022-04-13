@@ -53,10 +53,11 @@ input[type="checkbox"]:checked + label {
   max-width: 512px;
 }
 
-#list-of-habits {
+.habits-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .checkbox-container {
